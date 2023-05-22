@@ -4,7 +4,7 @@ agent any
 stages {
 stage('Checkout') {
 steps {
-git branch: 'main', url: 'https://gitlab.com/nandhini_maha/springdemo.git'
+git branch: 'main', url: 'https://github.com/Dillibabu390/myproj.git'
 }
 }
 
