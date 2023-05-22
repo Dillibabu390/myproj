@@ -8,6 +8,14 @@ git branch: 'main', url: 'https://github.com/Dillibabu390/myproj.git'
 }
 }
 
+stage('version check') {
+steps {
+{
+sh 'mvn --version'
+}
+}
+}
+
 stage('Build') {
 steps {
 withEnv ( ['JENKINS_NODE_COOKIE=do_not_kill'] )
@@ -16,6 +24,7 @@ sh 'mvn clean install'
 }
 }
 }
+
 
 stage('Run') {
 steps {
