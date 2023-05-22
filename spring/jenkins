@@ -8,13 +8,6 @@ git branch: 'main', url: 'https://github.com/Dillibabu390/myproj.git'
 }
 }
 
-stage('version check') {
-steps {
-{
-sh 'mvn --version'
-}
-}
-}
 
 stage('Build') {
 steps {
